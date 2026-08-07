@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/ui/PageHeader.astro';
+import SectionNav from '../components/ui/SectionNav.astro';
+import ResearchProjects from '../components/sections/ResearchProjects.astro';
+import ResearchPublications from '../components/sections/ResearchPublications.astro';
+import { getSiteConfig } from '../lib/content';
+
+const site = getSiteConfig();
+
+const sections = [
+  { id: 'research-projects', label: 'Research Projects' },
+  { id: 'publications', label: 'Publications' },
+];
+---
+
+<BaseLayout
+  title={`Research — ${site.name}`}
+  description="Academic research projects and publications in mathematical physics, topology, and numerical analysis."
+>
+  <PageHeader
+    title="Research"
+    description="Academic research projects and publications spanning mathematical physics, quantum field theory, and topological data analysis."
+  />
+  <SectionNav sections={sections} />
+  <ResearchProjects />
+  <ResearchPublications />
+</BaseLayout>

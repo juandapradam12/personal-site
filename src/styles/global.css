@@ -14,6 +14,8 @@
   --color-border: #e5e5e5;
   --color-accent: #0f766e;
   --color-accent-soft: #ccfbf1;
+  --header-height: 76px;
+  --section-nav-height: 52px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,4 +63,34 @@ a:hover {
   margin-top: 3rem;
   padding-top: 3rem;
   border-top: 1px solid var(--color-border);
+}
+
+.section-block {
+  scroll-margin-top: calc(var(--header-height) + var(--section-nav-height) + 1rem);
+}
+
+.section-nav {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 30;
+  backdrop-filter: blur(8px);
+}
+
+.section-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.section-nav {
+  scrollbar-width: none;
+}
+
+.section-nav-link {
+  position: relative;
+  white-space: nowrap;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.section-nav-link.is-active {
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
 }

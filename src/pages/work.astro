@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/ui/PageHeader.astro';
+import WorkProjects from '../components/sections/WorkProjects.astro';
+import { getSiteConfig } from '../lib/content';
+
+const site = getSiteConfig();
+---
+
+<BaseLayout
+  title={`Work — ${site.name}`}
+  description="Selected professional projects across AI, cybersecurity, and smart city systems."
+>
+  <PageHeader
+    title="Work"
+    description="A selection of end-to-end AI and data science projects delivered across sports, cybersecurity, government, and smart city domains."
+  />
+  <WorkProjects />
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Languages" id="languages">
+  <ul class="flex flex-wrap gap-3">
+    {
+      cv.languages.map((item) => (
+        <li
+          class="rounded-md border px-3 py-1.5 text-sm"
+          style="border-color: var(--color-border); background: var(--color-surface);"
+        >
+          <span class="font-medium">{item.name}</span>
+          <span style="color: var(--color-muted);"> · {item.level}</span>
+        </li>
+      ))
+    }
+  </ul>
+</SectionHeading>

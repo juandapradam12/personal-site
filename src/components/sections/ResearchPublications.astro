@@ -1,0 +1,24 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Publications" id="publications">
+  <ol class="space-y-4">
+    {
+      cv.publications.map((item) => (
+        <li class="text-sm">
+          <p class="font-medium" style="color: var(--color-text);">
+            {item.title}
+          </p>
+          <p style="color: var(--color-muted);">{item.authors}</p>
+          <p class="text-xs" style="color: var(--color-muted);">
+            {item.venue} · {item.date}
+          </p>
+        </li>
+      ))
+    }
+  </ol>
+</SectionHeading>

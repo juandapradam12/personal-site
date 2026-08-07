@@ -1,60 +1,419 @@
 summary: >
-  Data scientist with experience in machine learning, statistical modeling,
-  and turning complex datasets into actionable insights. Edit this summary
-  in content/config/cv.yaml — no layout changes needed.
+  Senior Data Scientist and Mathematical-Physicist with 6+ years of commercial
+  experience in applied data science, algorithm engineering, and technical
+  leadership, operating autonomously across end-to-end ML/AI projects for
+  Finance, Cybersecurity, Sports & Entertainment, Smart Cities, Government,
+  and Scientific Research. Hands-on expertise in Machine Learning, Deep
+  Learning, MLOps, predictive modelling, solution architecture, and
+  production deployment, applied to fraud and anomaly detection, adaptive
+  authentication, risk-based decision systems, NLP, and LLM applications. My
+  academic background in Mathematical Physics and Applied Mathematics lets me
+  approach problems from first principles, bridging rigorous scientific
+  thinking with practical software engineering. I am currently expanding into
+  Quantum Computing — Quantum Machine Learning, Quantum Optimization, and
+  Post-Quantum Cryptography — with the goal of bridging Research and Industry
+  through production-ready solutions with real-world impact.
 
 experience:
   - role: Data Scientist
-    company: Company Name
-    location: Madrid, Spain
-    period: 2022 — Present
+    company: Cívica
+    location: Barcelona, Spain
+    period: Jan 2025 — Present
     highlights:
-      - Built predictive models that improved key business metrics
-      - Partnered with stakeholders to define KPIs and deliver dashboards
-      - Productionized ML pipelines with Python and SQL
+      - "Ticket Fraud Detection (UEFA Champions League final): led end-to-end development of a fraud detection application, from requirements and data analysis to modeling, deployment (Dockerized, Snowflake), and stakeholder communication — identifying suspicious applicants, bots, and anomalous behavior"
+      - "Marketing Chatbot: designed and implemented a semantic chatbot on structured/unstructured data for UEFA's marketing team, using NLP and LLM prompting, hosted on Snowflake"
+      - "Match Risk Assessment: built a risk-scoring algorithm analyzing security and operational risk before, during, and after football matches, with dashboards for stakeholder communication"
 
-  - role: Data Analyst
-    company: Previous Company
-    location: Remote
-    period: 2020 — 2022
+  - role: Senior Data Scientist
+    company: SKG Tecnología
+    location: Colombia & Spain
+    period: Jan 2021 — Dec 2025
     highlights:
-      - Automated reporting workflows, reducing manual work significantly
-      - Conducted exploratory analysis to support product decisions
+      - Head of the Data Science & Applied Mathematics area, leading end-to-end analytics and ML projects for smart city, public sector, transportation, and government auditing use cases
+      - "Speed Prediction Algorithm (Bogotá): traffic speed prediction for a government smart city platform using large-scale sensor data"
+      - "Fraud Detection in Government Contracts: anomaly detection algorithm for the Auditoría General de la República (AGR) flagging inconsistencies and suspicious correlations in public contract data"
+      - "Traffic Fines Decision Algorithm & Photo Infraction Decider: rule-based and ML decision systems validating sensor-based traffic infringement evidence for the National Police and Secretary of Mobility"
+      - "TransMilenio predictive maintenance: time series and deep learning system assessing bus maintenance needs and driver performance for Bogotá's public transport"
+
+  - role: Algorithms Engineer
+    company: DefensePoint
+    location: Barcelona, Spain
+    period: Apr 2023 — Dec 2024
+    highlights:
+      - "Product Manager and Algorithms Engineer for an Adaptive Authentication platform, owning the full lifecycle: requirements, algorithm/risk model design, backend development, database integration, testing, and deployment"
+      - Engineered an API that dynamically determines authentication level per login attempt based on contextual risk, historical telemetry, and behavior patterns (IP, device, geolocation, language, local time)
+      - Applied data science to cybersecurity risk management, reducing noisy security signals and false positives while evolving traditional MFA into a dynamic, risk-based decision system
+
+  - role: Scientific Consultant (Freelance)
+    company: Freelance — Independent
+    location: Worldwide
+    period: Dec 2019 — Dec 2025
+    highlights:
+      - Delivered services spanning applied Data Science & Mathematics, ML/AI products, and research collaborations
+      - Worked with a broad, multicultural range of clients across industries including Finance, High-Precision Engineering, Manufacturing, Government, and Scientific Research
+
+  - role: Strategy Consultant
+    company: Consultoría e Inversiones Breakthrough
+    location: Bogotá, Colombia
+    period: Mar 2020 — Jul 2020
+    highlights:
+      - Analyst of businesses and investments, building mathematical models to support strategy design for competitiveness
+
+  - role: Research Fellowship
+    company: Université Bourgogne Franche-Comté
+    location: Dijon, France
+    period: Sep 2021 — Jun 2022
+    highlights:
+      - "Led the research project “Multi-Domain Spectral Approach for the Computation of Fourier Transform”"
+      - Developed numerical analysis algorithms in MATLAB to reduce resolution error in partial differential equations, with applications to medical imaging accuracy
+
+  - role: Associate Researcher
+    company: Universidad de los Andes
+    location: Bogotá, Colombia
+    period: Jan 2020 — Jan 2021
+    highlights:
+      - "Researcher for Project INV-2019-84-1833, Ministerio de Ciencias — Topological Phase Transitions and Non-Commutative Geometry in Quantum Electrodynamics"
+      - Research in Topological Machine Learning and Topological Data Analysis
+
+  - role: Undergraduate Teaching Assistant
+    company: Universidad de los Andes
+    location: Bogotá, Colombia
+    period: Sep 2016 — Dec 2019
+    highlights:
+      - "Taught Physics I & II, Mathematical Methods for Physicists, Particle Physics, and Differential Equations"
+      - Supported students at the Problem Solving Center
 
 education:
-  - degree: MSc / relevant degree
-    institution: University Name
-    period: 2018 — 2020
-    details: Focus area — machine learning, statistics, or your specialization
+  - degree: "Master in Quantum Computing"
+    institution: Universidad Internacional de La Rioja (UNIR)
+    period: Mar 2025 — Present
+    details: >
+      Quantum Computing, theoretical and experimental — Quantum Algorithms,
+      Quantum Machine Learning, Quantum Optimization, Quantum Programming
+      (Qiskit, IBM Quantum, D-Wave), Quantum Information, Quantum Hardware,
+      and Post-Quantum Cryptography.
 
-  - degree: BSc / relevant degree
-    institution: University Name
-    period: 2014 — 2018
-    details: Optional honors, thesis topic, or notable coursework
+  - degree: "Master of Science, Mathematics"
+    institution: Universitat de Barcelona
+    period: Sep 2022 — Sep 2023
+    details: >
+      Advanced studies in Applied Mathematics, Probability Theory, Numerical
+      Analysis, and Scientific Computing, with research in Topological
+      Machine Learning and Topological Data Analysis (TDA).
+
+  - degree: "Specialization, Data Science, Machine Learning, Deep Learning & AI"
+    institution: Centro de Investigación en Matemáticas Bourbaki
+    period: May 2022 — Dec 2022
+    details: Professional specialization program, Mexico.
+
+  - degree: "Research Fellowship / Master 1, Mathematical Physics (Math4Phys)"
+    institution: Université Bourgogne Franche-Comté
+    period: Sep 2021 — Jun 2022
+    details: >
+      Research fellowship in Mathematical Physics — Numerical Analysis,
+      Spectral Methods, Partial Differential Equations, and High-Performance
+      Scientific Computing, contributing to research published in Physica D.
+
+  - degree: "Bachelor of Science, Physics & Mathematics"
+    institution: Universidad de los Andes
+    period: 2014 — Dec 2019
+    details: >
+      Mathematical-Physics, Experimental Physics, and Scientific Computing,
+      combined with Applied Mathematics, Optimization, and Probability Theory.
+
+certifications:
+  - name: Source Systems, Data Ingestion, and Pipelines
+    issuer: DeepLearning.AI
+    date: Mar 2025
+    credentialId: EMPDG2LN7XLG
+  - name: Introduction to Data Engineering
+    issuer: DeepLearning.AI
+    date: Feb 2025
+    credentialId: NNZ1H18YDVXJ
+  - name: Python Project for Data Engineering
+    issuer: Coursera
+    date: Feb 2024
+  - name: Data Engineering Essentials
+    issuer: Coursera
+    date: Jan 2024
+  - name: Aplicaciones Financieras de Inteligencia Artificial
+    issuer: Colegio de Matemáticas Bourbaki
+    date: May 2023
+    credentialId: 557281dd-3b76-7548-ec74-f941c10cefd8
+  - name: Ruta a través de la Ciencia de Datos
+    issuer: Colegio de Matemáticas Bourbaki
+    date: May 2023
+    credentialId: f479b5ca-0eec-a8ce-dcdd-530cb3f6bf3f
+  - name: Ruta a través de la Ciencia de Datos
+    issuer: Colegio de Matemáticas Bourbaki
+    date: May 2023
+    credentialId: 734554f3-64fd-3c7c-a78a-778fa5a59e3e
+  - name: Machine Learning & AI
+    issuer: Colegio de Matemáticas Bourbaki
+    date: May 2023
+    credentialId: 03799107-4be9-d999-b974-22c50c98c1ac
+  - name: Data Science Summer School 2022
+    issuer: Hertie School — Data Science Lab
+    date: Aug 2022
+  - name: Applied Machine Learning
+    issuer: Columbia Engineering
+    date: Jun 2019
+  - name: Data Science Summer School 2021
+    issuer: Hertie School — Data Science Lab
+    date: Jul 2021
+
+projects:
+  - name: Marketing Chatbot
+    context: Cívica (for UEFA)
+    description: Semantic chatbot trained to answer queries from the organization's marketing team using NLP and LLM prompting.
+  - name: Match Risk Assessment
+    context: Cívica (for UEFA)
+    description: NLP and LLM-based application generating match incident summaries focused on violence, crowd behavior, police interventions, and external stadium events.
+  - name: Ticket Fraud Detection
+    context: Cívica (for UEFA)
+    description: Custom algorithm detecting high-probability risk in ticket re-selling for customers applying for match entry.
+  - name: Point Adaptive Authentication
+    context: DefensePoint
+    description: End-to-end adaptive authentication API deciding the appropriate authentication level for each login attempt.
+  - name: Government Justice Risk Detection
+    context: SKG Tecnología
+    description: Risk detection tool for the Comptroller's Auditoría General de la República (AGR) based on public contract information, using NLP, Text2Data, and ML.
+  - name: Public Bus Transport Performance Detection
+    context: SKG Tecnología
+    description: TransMilenio (Bogotá public transport) performance detection using time series, image analysis, and deep learning to prevent maintenance and monitor driver performance.
+  - name: Bogotá Traffic Model
+    context: SKG Tecnología
+    description: Real-time traffic analysis tool for Bogotá's Secretary of Mobility, combining mathematical-physics and mathematical modelling for business intelligence.
+  - name: Photo Infraction Decider
+    context: SKG Tecnología
+    description: Decision-support tool for the National Police and Secretary of Mobility easing traffic infraction validation via image processing and ML.
+
+research:
+  - title: Multi-Domain Spectral Approach for the Computation of Fourier Transform
+    affiliation: Université Bourgogne Franche-Comté
+    period: Sep 2021 — Present
+    description: >
+      Efficient computation of the Fourier Transform with a numerical spectral
+      algorithm via deformation techniques, improving accuracy of numerical
+      solutions of partial differential equations, with further applications
+      to medical imaging.
+
+  - title: Quantum Field Theory, Anomalies and Topological Phases
+    affiliation: Universidad de los Andes
+    period: Jan 2020 — Present
+    description: >
+      Research Project INV-2019-84-1833, Ministerio de Ciencias, in the field
+      of Topological Phase Transitions and Non-Commutative Geometry in
+      Quantum Electrodynamics.
+
+  - title: Quantum Fields with Dynamical Boundary Conditions
+    affiliation: Universidad de los Andes
+    period: Mar 2019 — Dec 2019
+    description: >
+      Studied aspects of Quantum Field Theory in flat and curved spacetimes
+      in the context of the Casimir effect with subtle modifications on
+      spacetime, observing that changes on vacuum introduce changes on
+      observables of the physical system.
+
+  - title: SPDC Characterization on Liquid Phase Exfoliated 2D Crystals for Piezoelectric Devices
+    affiliation: Universidad de los Andes
+    period: Jan 2019 — Aug 2019
+    description: >
+      Characterized non-linear behavior of crystals, studying Spontaneous
+      Parametric Down Conversion (SPDC) with the aim of obtaining a
+      piezoelectric response on the material.
+
+  - title: "Compactificación de la métrica de Schwarzschild y estructuras causales"
+    affiliation: Universidad de los Andes
+    period: Aug 2018 — Dec 2018
+    description: >
+      Multi-disciplinary approach from Mathematics, Philosophy, and Computer
+      Science to understand Schwarzschild metric compactification and its
+      causality implications, complemented by computer simulations on the
+      Einstein-Rosen black hole as an introduction to the Raychaudhuri
+      equation and the Singularity Theorems.
+
+  - title: "Seminar on Quantum Field Theory and Mathematical Physics: Non-trivial Geometrical Effects on Flat Space-time"
+    affiliation: Universidad de los Andes
+    period: Aug 2018 — Nov 2018
+    description: >
+      Discussion of the quantum vacuum from the point of view of the
+      Poincaré group of symmetries, studying phenomena such as the Casimir
+      effect on a bidimensional cylinder, accelerated expansion space-time,
+      and Rindler space-time using Quantum Field Theory on curved space-time.
+
+publications:
+  - title: On numerical approaches to nonlinear Schrödinger and Korteweg–de Vries equations for piecewise smooth and slowly decaying initial data
+    authors: "Klein, C., Prada-Malagón, J.D., & Stilov, N."
+    venue: Elsevier — Physica D — Nonlinear Phenomena
+    date: Nov 2023
+  - title: Time-dependent topological analysis for cardiovascular disease diagnosis using magnetic resonance
+    authors: "Prada-Malagón, J.D."
+    venue: CRAI Universitat de Barcelona — Dipòsit Digital UB
+    date: Sep 2023
+  - title: "Topological Phase Transitions and Non-commutative Geometry"
+    authors: "Prada, J.D. & Reyes, A."
+    venue: "Research Project INV-2019-84-1833 — Ministerio de Ciencias"
+    date: "2020"
+  - title: Quantum Fields with Dynamical Boundary Conditions
+    authors: "Prada Malagón, J.D."
+    venue: Universidad de los Andes
+    date: "2020"
+  - title: SPDC characterization on liquid phase exfoliated 2D crystals for piezoelectric devices
+    authors: "Prada, J.D., Navarrete, C., Navarrete, C., Hernandez, Y., Valencia, A."
+    venue: Universidad de los Andes
+    date: "2019"
+  - title: "Compactificación de la métrica de Schwarzschild y estructuras causales"
+    authors: "Prada, J.D., Calderón, F., Laguna, M., Bargueño, P."
+    venue: Universidad de los Andes
+    date: "2018"
 
 skills:
-  - category: Languages & tools
+  - category: AI & Machine Learning
+    items:
+      - Artificial Intelligence (AI)
+      - Machine Learning
+      - Deep Learning
+      - Computer Vision
+      - Natural Language Processing (NLP)
+      - Large Language Models (LLM)
+      - Generative AI Studio
+      - AI Engineering
+      - Machine Learning Engineering
+      - Bayesian Methods
+      - Recommendation Systems
+  - category: Mathematics & Physics
+    items:
+      - Mathematical Modeling
+      - Data Modeling
+      - Applied Mathematics
+      - Theoretical Mathematical Physics
+      - Optimization
+      - Scientific Computing
+      - Forecasting
+      - Physics
+      - High-Precision Engineering
+      - Numerical Analysis
+      - Topological Data Analysis
+  - category: Quantum Computing
+    items:
+      - Quantum Computing
+      - Quantum Programming
+      - Quantum Modelling
+      - Quantum Cybersecurity
+  - category: Cybersecurity & Risk
+    items:
+      - Cybersecurity
+      - Defense
+      - Multi-factor Authentication
+      - Adaptive Authentication
+      - Fraud & Anomaly Detection
+      - Risk Assessment
+  - category: Data & Software Engineering
+    items:
+      - Data Science
+      - Data Analytics
+      - Applied Analytics
+      - Data Engineering
+      - Data Ingestion
+      - Data Governance
+      - MLOps
+      - Cloud Computing
+      - Software Development
+      - Software Systems Engineering
+  - category: Languages & Tools
     items:
       - Python
-      - SQL
       - R
+      - SQL
+      - C/C++
+      - Matlab
+      - Docker
+      - Apache Airflow
+      - MLFlow
       - Git
-  - category: ML & analytics
+  - category: Visualization & BI
     items:
-      - scikit-learn
-      - pandas
-      - statistical modeling
-      - experimentation
-  - category: Other
+      - Seaborn
+      - Matplotlib
+      - Tableau
+      - Power BI
+      - Qlik
+  - category: Delivery & Research
     items:
-      - Cloud (GCP/AWS)
-      - Data visualization
+      - Research and Development (R&D)
+      - Research
+      - Project Planning
+      - Project Management
+      - Problem Solving
+      - Creative Problem Solving
+      - Storytelling
+
+toolbox:
+  - category: Coding
+    level: 10
+    items:
+      - Python (almost all libraries)
+      - SQL (ORM)
+      - R
+      - C/C++
+      - Matlab
+      - Delphi
+  - category: Machine Learning & Deep Learning
+    level: 10
+    items:
+      - Classical ML
+      - Segmentation
+      - Supervised Learning
+      - Unsupervised Learning
+      - Optimization
+      - A/B Testing
+  - category: MLOps
+    level: 8
+    items:
+      - Apache Airflow
+      - MLFlow
+      - Git
+      - Docker
+  - category: Visualization
+    level: 10
+    items:
+      - Seaborn
+      - Matplotlib
+      - Tableau
+      - Power BI
+      - Qlik
+  - category: Storytelling
+    level: 10
+    items:
       - Technical communication
+      - Stakeholder presentations
+
+strengths:
+  - Hard-working
+  - Competitive
+  - Analytic
+  - Consistent
+  - Strategic
+  - Persistent
+  - Proactive
+
+languages:
+  - name: Spanish
+    level: Native
+  - name: English
+    level: "Bilingual (IELTS C1)"
+  - name: Catalan
+    level: Basic
+  - name: German
+    level: Basic (A2)
+  - name: French
+    level: Basic (A2)
 
 links:
-  - label: GitHub
-    href: https://github.com/yourusername
   - label: LinkedIn
-    href: https://linkedin.com/in/yourprofile
+    href: https://www.linkedin.com/in/juandpradam12/
+  - label: GitHub
+    href: https://github.com/juandapradam12
   - label: Download PDF
     href: /cv.pdf

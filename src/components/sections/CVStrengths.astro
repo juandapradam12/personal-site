@@ -1,0 +1,11 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import TagList from '../ui/TagList.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Strengths" id="strengths">
+  <TagList items={cv.strengths} />
+</SectionHeading>

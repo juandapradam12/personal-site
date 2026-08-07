@@ -1,0 +1,25 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Research Projects" id="research-projects">
+  <div class="space-y-6">
+    {
+      cv.research.map((item) => (
+        <article class="space-y-1">
+          <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <h3 class="text-base font-semibold">{item.title}</h3>
+            <p class="text-sm whitespace-nowrap" style="color: var(--color-muted);">
+              {item.period}
+            </p>
+          </div>
+          <p style="color: var(--color-muted);">{item.affiliation}</p>
+          <p class="text-sm" style="color: var(--color-muted);">{item.description.trim()}</p>
+        </article>
+      ))
+    }
+  </div>
+</SectionHeading>

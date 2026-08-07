@@ -1,0 +1,82 @@
+---
+interface NavSection {
+  id: string;
+  label: string;
+}
+
+interface Props {
+  sections: NavSection[];
+}
+
+const { sections } = Astro.props;
+---
+
+<nav
+  class="section-nav mb-8 -mx-4 flex gap-1 overflow-x-auto border-b px-4 py-2 sm:mx-0 sm:px-0"
+  style="border-color: var(--color-border); background: color-mix(in srgb, var(--color-bg) 92%, transparent);"
+  aria-label="Section navigation"
+>
+  {
+    sections.map((section) => (
+      <a
+        href={`#${section.id}`}
+        data-section-nav-link={section.id}
+        class="section-nav-link rounded-full px-3 py-1.5 text-sm font-medium"
+        style="color: var(--color-muted);"
+      >
+        {section.label}
+      </a>
+    ))
+  }
+</nav>
+
+<script>
+  function initSectionNav() {
+    const links = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>('[data-section-nav-link]')
+    );
+    if (links.length === 0) return;
+
+    const sections = links
+      .map((link) => {
+        const id = link.getAttribute('data-section-nav-link');
+        return id ? document.getElementById(id) : null;
+      })
+      .filter((el): el is HTMLElement => el !== null);
+
+    const setActive = (id: string) => {
+      links.forEach((link) => {
+        const isActive = link.getAttribute('data-section-nav-link') === id;
+        link.classList.toggle('is-active', isActive);
+        if (isActive) {
+          link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+
+        if (visible.length > 0) {
+          setActive(visible[0].target.id);
+        }
+      },
+      {
+        rootMargin: '-45% 0px -50% 0px',
+        threshold: 0,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    if (sections.length > 0) {
+      setActive(sections[0].id);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initSectionNav);
+  document.addEventListener('astro:page-load', initSectionNav);
+</script>

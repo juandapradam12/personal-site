@@ -53,6 +53,44 @@ export interface SkillGroup {
   items: string[];
 }
 
+export interface ResearchItem {
+  title: string;
+  affiliation: string;
+  period: string;
+  description: string;
+}
+
+export interface CertificationItem {
+  name: string;
+  issuer: string;
+  date: string;
+  credentialId?: string;
+}
+
+export interface CvProjectItem {
+  name: string;
+  context: string;
+  description: string;
+}
+
+export interface PublicationItem {
+  title: string;
+  authors: string;
+  venue: string;
+  date: string;
+}
+
+export interface LanguageItem {
+  name: string;
+  level: string;
+}
+
+export interface ToolboxItem {
+  category: string;
+  level: number;
+  items: string[];
+}
+
 export interface CvLink {
   label: string;
   href: string;
@@ -62,7 +100,14 @@ export interface CvConfig {
   summary: string;
   experience: ExperienceItem[];
   education: EducationItem[];
+  certifications: CertificationItem[];
+  projects: CvProjectItem[];
+  research: ResearchItem[];
+  publications: PublicationItem[];
   skills: SkillGroup[];
+  toolbox: ToolboxItem[];
+  strengths: string[];
+  languages: LanguageItem[];
   links: CvLink[];
 }
 

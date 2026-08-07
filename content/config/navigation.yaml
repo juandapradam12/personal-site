@@ -4,10 +4,10 @@ items:
     enabled: true
   - label: Work
     href: /work
-    enabled: false
+    enabled: true
   - label: Research
     href: /research
-    enabled: false
+    enabled: true
   - label: Blog
     href: /blog
     enabled: false

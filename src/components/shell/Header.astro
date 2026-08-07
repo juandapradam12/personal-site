@@ -6,8 +6,9 @@ const site = getSiteConfig();
 ---
 
 <header
-  class="border-b"
-  style="border-color: var(--color-border); background: var(--color-surface);"
+  id="site-header"
+  class="sticky top-0 z-40 border-b backdrop-blur"
+  style="border-color: var(--color-border); background: color-mix(in srgb, var(--color-surface) 90%, transparent);"
 >
   <div class="container-main flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">
     <a href="/" class="no-underline" style="color: var(--color-text);">
@@ -17,3 +18,14 @@ const site = getSiteConfig();
     <Nav />
   </div>
 </header>
+
+<script>
+  function setHeaderHeightVar() {
+    const header = document.getElementById('site-header');
+    if (header) {
+      document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+    }
+  }
+  setHeaderHeightVar();
+  window.addEventListener('resize', setHeaderHeightVar);
+</script>

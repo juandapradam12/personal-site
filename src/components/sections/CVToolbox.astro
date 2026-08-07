@@ -1,0 +1,34 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import TagList from '../ui/TagList.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Tool Box" id="toolbox">
+  <div class="space-y-6">
+    {
+      cv.toolbox.map((item) => (
+        <div class="space-y-2">
+          <div class="flex items-baseline justify-between">
+            <h3 class="text-sm font-semibold">{item.category}</h3>
+            <span class="text-xs" style="color: var(--color-muted);">
+              {item.level}/10
+            </span>
+          </div>
+          <div
+            class="h-1.5 w-full overflow-hidden rounded-full"
+            style="background: var(--color-border);"
+          >
+            <div
+              class="h-full rounded-full"
+              style={`width: ${(item.level / 10) * 100}%; background: var(--color-accent);`}
+            />
+          </div>
+          <TagList items={item.items} />
+        </div>
+      ))
+    }
+  </div>
+</SectionHeading>
