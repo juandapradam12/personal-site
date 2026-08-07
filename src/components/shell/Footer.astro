@@ -1,0 +1,18 @@
+---
+import { getSiteConfig } from '../../lib/content';
+
+const site = getSiteConfig();
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="border-t py-6 text-sm"
+  style="border-color: var(--color-border); color: var(--color-muted);"
+>
+  <div class="container-main flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+    <p>© {year} {site.name}</p>
+    <p>
+      <a href={`mailto:${site.email}`}>{site.email}</a>
+    </p>
+  </div>
+</footer>

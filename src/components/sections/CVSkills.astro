@@ -1,0 +1,22 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import TagList from '../ui/TagList.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Skills" id="skills">
+  <div class="space-y-6">
+    {
+      cv.skills.map((group) => (
+        <div class="space-y-3">
+          <h3 class="text-sm font-medium uppercase tracking-wide" style="color: var(--color-muted);">
+            {group.category}
+          </h3>
+          <TagList items={group.items} />
+        </div>
+      ))
+    }
+  </div>
+</SectionHeading>

@@ -1,0 +1,19 @@
+---
+import Nav from './Nav.astro';
+import { getSiteConfig } from '../../lib/content';
+
+const site = getSiteConfig();
+---
+
+<header
+  class="border-b"
+  style="border-color: var(--color-border); background: var(--color-surface);"
+>
+  <div class="container-main flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+    <a href="/" class="no-underline" style="color: var(--color-text);">
+      <span class="block text-lg font-semibold">{site.name}</span>
+      <span class="block text-sm" style="color: var(--color-muted);">{site.role}</span>
+    </a>
+    <Nav />
+  </div>
+</header>

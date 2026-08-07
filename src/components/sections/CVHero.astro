@@ -1,0 +1,51 @@
+---
+import { getSiteConfig, getCvConfig } from '../../lib/content';
+
+const site = getSiteConfig();
+const cv = getCvConfig();
+---
+
+<section class="space-y-4">
+  <div>
+    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">{site.name}</h1>
+    <p class="mt-2 text-lg" style="color: var(--color-muted);">{site.tagline}</p>
+  </div>
+
+  <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm" style="color: var(--color-muted);">
+    <span>{site.location}</span>
+    <span>·</span>
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+  </div>
+
+  {
+    site.openTo.length > 0 && (
+      <p class="text-sm">
+        Open to: {site.openTo.join(' · ')}
+      </p>
+    )
+  }
+
+  <p class="max-w-prose text-base leading-relaxed" style="color: var(--color-muted);">
+    {cv.summary.trim()}
+  </p>
+
+  {
+    cv.links.length > 0 && (
+      <div class="flex flex-wrap gap-3 pt-1">
+        {
+          cv.links.map((link) => (
+            <a
+              href={link.href}
+              class="inline-flex items-center rounded-md border px-3 py-1.5 text-sm font-medium no-underline transition hover:opacity-90"
+              style="border-color: var(--color-border); background: var(--color-surface); color: var(--color-text);"
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </div>
+    )
+  }
+</section>

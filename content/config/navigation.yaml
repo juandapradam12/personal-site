@@ -1,0 +1,16 @@
+items:
+  - label: CV
+    href: /
+    enabled: true
+  - label: Work
+    href: /work
+    enabled: false
+  - label: Research
+    href: /research
+    enabled: false
+  - label: Blog
+    href: /blog
+    enabled: false
+  - label: About
+    href: /about
+    enabled: false

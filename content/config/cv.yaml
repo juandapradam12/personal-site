@@ -1,0 +1,60 @@
+summary: >
+  Data scientist with experience in machine learning, statistical modeling,
+  and turning complex datasets into actionable insights. Edit this summary
+  in content/config/cv.yaml — no layout changes needed.
+
+experience:
+  - role: Data Scientist
+    company: Company Name
+    location: Madrid, Spain
+    period: 2022 — Present
+    highlights:
+      - Built predictive models that improved key business metrics
+      - Partnered with stakeholders to define KPIs and deliver dashboards
+      - Productionized ML pipelines with Python and SQL
+
+  - role: Data Analyst
+    company: Previous Company
+    location: Remote
+    period: 2020 — 2022
+    highlights:
+      - Automated reporting workflows, reducing manual work significantly
+      - Conducted exploratory analysis to support product decisions
+
+education:
+  - degree: MSc / relevant degree
+    institution: University Name
+    period: 2018 — 2020
+    details: Focus area — machine learning, statistics, or your specialization
+
+  - degree: BSc / relevant degree
+    institution: University Name
+    period: 2014 — 2018
+    details: Optional honors, thesis topic, or notable coursework
+
+skills:
+  - category: Languages & tools
+    items:
+      - Python
+      - SQL
+      - R
+      - Git
+  - category: ML & analytics
+    items:
+      - scikit-learn
+      - pandas
+      - statistical modeling
+      - experimentation
+  - category: Other
+    items:
+      - Cloud (GCP/AWS)
+      - Data visualization
+      - Technical communication
+
+links:
+  - label: GitHub
+    href: https://github.com/yourusername
+  - label: LinkedIn
+    href: https://linkedin.com/in/yourprofile
+  - label: Download PDF
+    href: /cv.pdf

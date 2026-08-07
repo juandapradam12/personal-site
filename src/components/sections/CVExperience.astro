@@ -1,0 +1,17 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import TimelineItem from '../ui/TimelineItem.astro';
+import { getCvConfig } from '../../lib/content';
+
+const cv = getCvConfig();
+---
+
+<SectionHeading title="Experience" id="experience">
+  <div class="space-y-8">
+    {
+      cv.experience.map((item) => (
+        <TimelineItem {...item} />
+      ))
+    }
+  </div>
+</SectionHeading>
