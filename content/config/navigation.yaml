@@ -1,16 +1,16 @@
 items:
-  - label: Research
-    href: /research
-    enabled: true
-  - label: Work
-    href: /work
+  - label: About
+    href: /about
     enabled: true
   - label: CV
     href: /
     enabled: true
+  - label: Work
+    href: /work
+    enabled: true
+  - label: Research
+    href: /research
+    enabled: true
   - label: Blog
     href: /blog
     enabled: false
-  - label: About
-    href: /about
-    enabled: true
