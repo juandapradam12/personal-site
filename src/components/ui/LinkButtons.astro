@@ -20,8 +20,8 @@ const { links, noPrintLabels = [] } = Astro.props;
             { 'no-print': noPrintLabels.includes(link.label) },
           ]}
           style="border-color: var(--color-border); background: var(--color-surface); color: var(--color-text);"
-          target={link.href.startsWith('http') ? '_blank' : undefined}
-          rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
+          target="_blank"
+          rel="noreferrer"
         >
           {link.label}
         </a>
