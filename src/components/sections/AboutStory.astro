@@ -1,0 +1,20 @@
+---
+import { getAboutConfig } from '../../lib/content';
+
+const about = getAboutConfig();
+const paragraphs = about.story
+  .trim()
+  .split(/\n\s*\n/)
+  .map((p) => p.trim())
+  .filter(Boolean);
+---
+
+<section class="section-block space-y-4">
+  {
+    paragraphs.map((paragraph) => (
+      <p class="max-w-prose text-base leading-relaxed" style="color: var(--color-muted);">
+        {paragraph}
+      </p>
+    ))
+  }
+</section>

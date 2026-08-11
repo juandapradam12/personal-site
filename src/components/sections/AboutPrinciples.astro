@@ -1,0 +1,24 @@
+---
+import SectionHeading from '../ui/SectionHeading.astro';
+import { getAboutConfig } from '../../lib/content';
+
+const about = getAboutConfig();
+---
+
+<SectionHeading title="How I work" id="how-i-work">
+  <div class="grid gap-4 sm:grid-cols-2">
+    {
+      about.principles.map((principle) => (
+        <div
+          class="space-y-1.5 rounded-lg border p-4"
+          style="border-color: var(--color-border); background: var(--color-surface);"
+        >
+          <h3 class="text-sm font-semibold">{principle.title}</h3>
+          <p class="text-sm" style="color: var(--color-muted);">
+            {principle.description.trim()}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</SectionHeading>

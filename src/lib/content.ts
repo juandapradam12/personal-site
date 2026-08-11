@@ -96,6 +96,19 @@ export interface CvLink {
   href: string;
 }
 
+export interface AboutPrinciple {
+  title: string;
+  description: string;
+}
+
+export interface AboutConfig {
+  intro: string;
+  story: string;
+  principles: AboutPrinciple[];
+  beyondWork: string[];
+  funFacts: string[];
+}
+
 export interface CvConfig {
   summary: string;
   experience: ExperienceItem[];
@@ -125,4 +138,8 @@ export function getCvConfig(): CvConfig {
 
 export function getEnabledNavItems(): NavItem[] {
   return getNavigationConfig().items.filter((item) => item.enabled);
+}
+
+export function getAboutConfig(): AboutConfig {
+  return loadYaml<AboutConfig>('config/about.yaml');
 }

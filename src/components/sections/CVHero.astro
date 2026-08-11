@@ -1,4 +1,5 @@
 ---
+import LinkButtons from '../ui/LinkButtons.astro';
 import { getSiteConfig, getCvConfig } from '../../lib/content';
 
 const site = getSiteConfig();
@@ -29,26 +30,5 @@ const cv = getCvConfig();
     {cv.summary.trim()}
   </p>
 
-  {
-    cv.links.length > 0 && (
-      <div class="flex flex-wrap gap-3 pt-1">
-        {
-          cv.links.map((link) => (
-            <a
-              href={link.href}
-              class:list={[
-                'inline-flex items-center rounded-md border px-3 py-1.5 text-sm font-medium no-underline transition hover:opacity-90',
-                { 'no-print': link.label === 'Download PDF' },
-              ]}
-              style="border-color: var(--color-border); background: var(--color-surface); color: var(--color-text);"
-              target={link.href.startsWith('http') ? '_blank' : undefined}
-              rel={link.href.startsWith('http') ? 'noreferrer' : undefined}
-            >
-              {link.label}
-            </a>
-          ))
-        }
-      </div>
-    )
-  }
+  <LinkButtons links={cv.links} noPrintLabels={['Download PDF']} />
 </section>

@@ -13,4 +13,4 @@ items:
     enabled: false
   - label: About
     href: /about
-    enabled: false
+    enabled: true
