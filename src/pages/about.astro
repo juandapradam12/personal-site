@@ -20,16 +20,18 @@ const contactLinks = cv.links.filter((link) => link.label !== 'Download PDF');
   <div class="flex flex-col-reverse gap-6 sm:flex-row sm:items-start sm:justify-between">
     <div class="flex-1">
       <PageHeader title="About" description={about.intro.trim()} />
+    </div>
+    <div class="flex shrink-0 flex-col items-center gap-3">
+      <img
+        src="/images/juan.jpg"
+        alt="Juan David Prada Malagón"
+        width="399"
+        height="500"
+        class="h-40 w-32 rounded-2xl border object-cover sm:h-48 sm:w-40"
+        style="border-color: var(--color-border);"
+      />
       <LinkButtons links={contactLinks} />
     </div>
-    <img
-      src="/images/juan.jpg"
-      alt="Juan David Prada Malagón"
-      width="399"
-      height="500"
-      class="h-40 w-32 shrink-0 rounded-2xl border object-cover sm:h-48 sm:w-40"
-      style="border-color: var(--color-border);"
-    />
   </div>
   <AboutStory />
   <AboutPrinciples />

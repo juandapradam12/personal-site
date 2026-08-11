@@ -3,8 +3,11 @@ import SectionHeading from '../ui/SectionHeading.astro';
 import { getAboutConfig } from '../../lib/content';
 
 const about = getAboutConfig();
+const hasPrinciples = about.principles.length > 0;
 ---
 
+{
+  hasPrinciples && (
 <SectionHeading title="How I work" id="how-i-work">
   <div class="grid gap-4 sm:grid-cols-2">
     {
@@ -22,3 +25,5 @@ const about = getAboutConfig();
     }
   </div>
 </SectionHeading>
+  )
+}

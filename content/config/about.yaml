@@ -1,46 +1,20 @@
+# This page is meant to sound like you, not like an AI-generated bio —
+# edit the fields below directly with your own words whenever you like.
+
 intro: >
-  I'm Juan — a mathematical physicist who ended up building fraud detection
-  systems, chatbots, and risk algorithms for a living. I like problems that
-  don't have an obvious shape yet: the kind that need a few days of thinking
-  from first principles before they need a single line of code.
+  A short, personal introduction. Replace with your own words.
 
 story: >
-  I started in Physics and Mathematics at Universidad de los Andes in Bogotá,
-  drawn to the parts of science where you have to build the tools before you
-  can even ask the question properly. That took me into quantum field theory,
-  topology, and eventually a research fellowship in Dijon, France, working on
-  spectral methods for the Fourier transform — the kind of problem that looks
-  purely abstract until you realize it quietly powers things like medical
-  imaging.
+  Physicist and mathematician turned data scientist, based in Barcelona.
+  Studied Physics and Mathematics at Universidad de los Andes (Bogotá),
+  did a research fellowship in Dijon, France, and a master's in Applied
+  Mathematics in Barcelona. Currently doing a second master's in Quantum
+  Computing while working in applied data science and AI.
 
-
-  After a master's in Applied Mathematics in Barcelona, I moved from academic
-  research into industry, and found that the same instincts — question
-  assumptions, model the system before touching the data, don't trust a result
-  you can't explain — translate directly into building things that ship: fraud
-  detection for a UEFA final, adaptive authentication for cybersecurity,
-  traffic and risk models for city governments. I'm currently doing a second
-  master's in Quantum Computing, because the gap between "interesting research"
-  and "production system" is the part I actually enjoy closing.
-
-principles:
-  - title: Rigor before code
-    description: >
-      I'd rather spend a day understanding the shape of a problem than a week
-      debugging a model built on the wrong assumptions.
-  - title: Own it end to end
-    description: >
-      I like staying close to a problem from the first data exploration to
-      the thing running in production and the stakeholder explaining it to
-      their boss.
-  - title: Explainable over clever
-    description: >
-      A model nobody can question is a liability. I favor solutions I can
-      defend from first principles, even under pressure.
-  - title: Research is unfinished industry
-    description: >
-      Most of what I work on started as an academic paper. I like being the
-      person who carries an idea the rest of the way.
+# Optional "how I work" cards. Leave empty to hide this section — add
+# entries (title + description) once you have principles you'd actually
+# want to put your name on.
+principles: []
 
 # Add a few hobbies, interests, or things you like outside of work.
 # This section only shows up on the site once this list isn't empty.
