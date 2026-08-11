@@ -54,6 +54,17 @@ letsTalk:
   title: "Let's talk"
   description: >
     Have a project in mind, or just want to explore what's possible
-    together? I'd love to hear about it.
-  buttonLabel: "Book a call"
+    together? I'd love to hear about it — pick whichever way works best
+    for you.
   emailSubject: "Let's talk about a project"
+
+  # Replace with your real Calendly (or Cal.com) scheduling link once you
+  # have one, e.g. https://calendly.com/your-handle/30min. Leave empty to
+  # hide the "Book a call" option.
+  calendlyUrl: "https://calendly.com/pradamalagonjd"
+  calendlyLabel: "Book a call"
+
+  # Get a free access key at https://web3forms.com (just enter your email,
+  # no account needed — the key arrives instantly) and paste it below to
+  # activate the contact form. Leave empty to hide the form.
+  formAccessKey: "90d2d907-dab6-4f9d-bdef-e54b635e0c8f"

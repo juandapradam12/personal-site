@@ -115,8 +115,10 @@ export interface ProcessStep {
 export interface LetsTalkConfig {
   title: string;
   description: string;
-  buttonLabel: string;
   emailSubject?: string;
+  calendlyUrl?: string;
+  calendlyLabel?: string;
+  formAccessKey?: string;
 }
 
 export interface ServicesConfig {
