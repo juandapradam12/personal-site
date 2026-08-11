@@ -12,8 +12,10 @@ const site = getSiteConfig();
 >
   <div class="container-main flex flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">
     <a href="/" class="no-underline" style="color: var(--color-text);">
-      <span class="block text-lg font-semibold">{site.name}</span>
-      <span class="block text-sm" style="color: var(--color-muted);">{site.role}</span>
+      <span class="block text-lg font-semibold tracking-tight">{site.name}</span>
+      <span class="mt-1.5 block text-sm tracking-wide" style="color: var(--color-muted);">
+        {site.role}
+      </span>
     </a>
     <Nav />
   </div>
