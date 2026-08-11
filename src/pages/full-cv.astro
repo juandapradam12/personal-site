@@ -1,0 +1,50 @@
+---
+// Combines every CV section into a single page, used only to render public/cv.pdf
+// (see scripts/generate-cv-pdf.sh). Not linked from the main navigation: the site
+// splits Work and Research into their own pages for browsing, but the downloadable
+// PDF should be a complete, self-contained resume.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionNav from '../components/ui/SectionNav.astro';
+import CVHero from '../components/sections/CVHero.astro';
+import CVExperience from '../components/sections/CVExperience.astro';
+import WorkProjects from '../components/sections/WorkProjects.astro';
+import CVEducation from '../components/sections/CVEducation.astro';
+import ResearchProjects from '../components/sections/ResearchProjects.astro';
+import ResearchPublications from '../components/sections/ResearchPublications.astro';
+import CVCertifications from '../components/sections/CVCertifications.astro';
+import CVSkills from '../components/sections/CVSkills.astro';
+import CVToolbox from '../components/sections/CVToolbox.astro';
+import CVStrengths from '../components/sections/CVStrengths.astro';
+import CVLanguages from '../components/sections/CVLanguages.astro';
+import { getSiteConfig } from '../lib/content';
+
+const site = getSiteConfig();
+
+const sections = [
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'education', label: 'Education' },
+  { id: 'research-projects', label: 'Research' },
+  { id: 'publications', label: 'Publications' },
+  { id: 'certifications', label: 'Certifications' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'toolbox', label: 'Tool Box' },
+  { id: 'strengths', label: 'Strengths' },
+  { id: 'languages', label: 'Languages' },
+];
+---
+
+<BaseLayout title={`Full CV — ${site.name}`} noindex>
+  <CVHero />
+  <SectionNav sections={sections} />
+  <CVExperience />
+  <WorkProjects />
+  <CVEducation />
+  <ResearchProjects />
+  <ResearchPublications />
+  <CVCertifications />
+  <CVSkills />
+  <CVToolbox />
+  <CVStrengths />
+  <CVLanguages />
+</BaseLayout>

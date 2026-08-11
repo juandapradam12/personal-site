@@ -45,7 +45,19 @@ Site-wide settings: `content/config/site.yaml`.
 
 ## PDF resume
 
-Place your PDF at `public/cv.pdf`. The download link in `cv.yaml` already points there.
+`public/cv.pdf` is generated from the live CV page (not uploaded by hand), so it always matches
+what's on the site and never includes data you've chosen to keep off the public page (phone,
+date of birth, references, etc.).
+
+Regenerate it after editing `content/config/cv.yaml`:
+
+```bash
+npm run cv:pdf
+```
+
+This builds the site, serves it locally, and renders the CV page with headless Chrome using the
+`@media print` rules in `src/styles/global.css` (hides the header, in-page nav, footer, and the
+"Download PDF" button itself). Requires Google Chrome installed locally.
 
 ## Deploy free (Vercel)
 

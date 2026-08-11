@@ -94,3 +94,47 @@ a:hover {
   color: var(--color-accent);
   background: var(--color-accent-soft);
 }
+
+@media print {
+  :root {
+    color-scheme: light;
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-text: #171717;
+    --color-muted: #444444;
+    --color-border: #d4d4d4;
+    --color-accent: #0f766e;
+    --color-accent-soft: #e6f7f5;
+  }
+
+  #site-header,
+  .section-nav,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .container-main {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .section-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section-block + .section-block {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
