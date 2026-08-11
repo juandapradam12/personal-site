@@ -13,21 +13,30 @@ services:
       exploring what Data Science, Machine Learning, or AI can do for them.
   - title: ML & AI Model Development
     description: >
-      Design and development of predictive models and AI systems — from
-      classical ML to deep learning, NLP, and LLM applications — tailored
-      to the problem at hand.
+      Design and development of predictive, forecasting, classification,
+      and clustering models, and broader AI systems — from classical ML to
+      deep learning, NLP, and LLM applications — tailored to the problem
+      at hand.
   - title: End-to-End Deployment
     description: >
-      Taking models from notebook to production: software architecture,
-      APIs, containerization, and CI/CD, so solutions keep running reliably.
+      A tailor-made solution designed around your requirements and
+      technology stack — from data gathering and proof of concept, through
+      modelling and software development with a suitable architecture, to
+      APIs, containerization, and CI/CD, so the solution keeps running
+      reliably in production.
   - title: Research Collaboration
     description: >
-      Applied research partnerships bridging academia and industry, from
-      mathematical modelling to publishable results.
+      Theoretical and applied research partnerships bridging academia and
+      industry, from mathematical modelling to publishable results.
   - title: Quantum Computing Exploration
     description: >
       Early-stage exploration of Quantum Machine Learning, Quantum
       Optimization, and Post-Quantum Cryptography for teams looking ahead.
+  - title: Is Your Enterprise Quantum Ready?
+    description: >
+      A tailor-made roadmap for quantum adoption — assessing where your
+      organization stands today and what it needs to prepare for Quantum
+      Computing, Quantum Machine Learning, and Post-Quantum Cryptography.
 
 processIntro: "My approach to an end-to-end project:"
 process:
@@ -40,3 +49,11 @@ process:
   - title: CI/CD
   - title: Results presentation
     description: Continuous communication with stakeholders
+
+letsTalk:
+  title: "Let's talk"
+  description: >
+    Have a project in mind, or just want to explore what's possible
+    together? I'd love to hear about it.
+  buttonLabel: "Book a call"
+  emailSubject: "Let's talk about a project"

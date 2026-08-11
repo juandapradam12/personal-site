@@ -4,6 +4,7 @@ import PageHeader from '../components/ui/PageHeader.astro';
 import SectionNav from '../components/ui/SectionNav.astro';
 import ServicesList from '../components/sections/ServicesList.astro';
 import ServicesProcess from '../components/sections/ServicesProcess.astro';
+import ServicesLetsTalk from '../components/sections/ServicesLetsTalk.astro';
 import { getSiteConfig, getServicesConfig } from '../lib/content';
 
 const site = getSiteConfig();
@@ -12,6 +13,7 @@ const services = getServicesConfig();
 const sections = [
   { id: 'services', label: 'Services' },
   { id: 'how-i-work', label: 'How I work' },
+  { id: 'lets-talk', label: "Let's talk" },
 ];
 ---
 
@@ -23,4 +25,5 @@ const sections = [
   <SectionNav sections={sections} />
   <ServicesList />
   <ServicesProcess />
+  <ServicesLetsTalk />
 </BaseLayout>

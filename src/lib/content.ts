@@ -112,11 +112,19 @@ export interface ProcessStep {
   description?: string;
 }
 
+export interface LetsTalkConfig {
+  title: string;
+  description: string;
+  buttonLabel: string;
+  emailSubject?: string;
+}
+
 export interface ServicesConfig {
   intro: string;
   services: ServiceItem[];
   processIntro?: string;
   process: ProcessStep[];
+  letsTalk?: LetsTalkConfig;
 }
 
 export interface CvConfig {
