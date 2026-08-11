@@ -1,20 +1,64 @@
-# This page is meant to sound like you, not like an AI-generated bio —
-# edit the fields below directly with your own words whenever you like.
+# Sourced from Juan's LinkedIn "About" section and CV — edit directly if
+# anything needs tweaking.
 
 intro: >
-  A short, personal introduction. Replace with your own words.
+  I am a Senior Data Scientist with over six years of experience designing
+  and delivering end-to-end AI solutions, Intelligent Systems, and advanced
+  analytical platforms across diverse industries, including Finance,
+  Cybersecurity, Sports & Entertainment, Smart Cities, Intelligent
+  Transportation Systems, Government, Justice, High-Precision Engineering,
+  and Scientific Research.
 
 story: >
-  Physicist and mathematician turned data scientist, based in Barcelona.
-  Studied Physics and Mathematics at Universidad de los Andes (Bogotá),
-  did a research fellowship in Dijon, France, and a master's in Applied
-  Mathematics in Barcelona. Currently doing a second master's in Quantum
-  Computing while working in applied data science and AI.
+  My expertise combines Artificial Intelligence, Machine Learning, Deep
+  Learning, Mathematical Modelling, and Software Engineering to solve
+  complex engineering and business challenges. Throughout my career, I have
+  transformed scientific concepts into production-ready solutions by
+  designing algorithms, mathematical models, and intelligent software that
+  generate measurable business value.
 
-# Optional "how I work" cards. Leave empty to hide this section — add
-# entries (title + description) once you have principles you'd actually
-# want to put your name on.
-principles: []
+
+  I have led the design and development of Intelligent Systems for a broad
+  range of real-world use cases, including Fraud Detection, Risk Assessment,
+  Adaptive Authentication, Anomaly Detection, Computer Vision, Natural
+  Language Processing (NLP), Large Language Model (LLM) Applications,
+  Predictive Analytics, Time Series Forecasting, Optimization Algorithms,
+  and Intelligent Decision-Support Systems. These solutions have been
+  successfully deployed to support secure, scalable, and data-driven
+  decision-making in complex operational environments.
+
+
+  My academic background in Mathematical Physics and Applied Mathematics
+  naturally complements my industrial experience, enabling me to approach
+  problems from first principles and bridge rigorous scientific thinking
+  with practical Software Engineering. This combination has allowed me to
+  contribute to projects ranging from high-precision numerical algorithms
+  and mathematical modelling to enterprise-grade AI systems, cybersecurity
+  solutions, and scientific computing.
+
+
+  I am currently expanding this expertise into Quantum Computing, with a
+  particular interest in Quantum Machine Learning, Quantum Optimization,
+  Hybrid Quantum-Classical Algorithms, and Post-Quantum Cryptography,
+  exploring how next-generation computational technologies can enhance
+  Artificial Intelligence, Cybersecurity, and Scientific Computing.
+
+
+  My goal is to bridge the gap between Research and Industry by
+  transforming advanced computational methods into intelligent,
+  production-ready solutions that create measurable real-world impact.
+
+principlesIntro: "My approach to an end-to-end project:"
+principles:
+  - title: Requirements gathering
+  - title: Data collection
+  - title: Modelling & algorithm design
+  - title: Software development
+    description: With appropriate software architecture
+  - title: Deployment
+  - title: CI/CD
+  - title: Results presentation
+    description: Continuous communication with stakeholders
 
 # Add a few hobbies, interests, or things you like outside of work.
 # This section only shows up on the site once this list isn't empty.

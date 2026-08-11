@@ -98,12 +98,13 @@ export interface CvLink {
 
 export interface AboutPrinciple {
   title: string;
-  description: string;
+  description?: string;
 }
 
 export interface AboutConfig {
   intro: string;
   story: string;
+  principlesIntro?: string;
   principles: AboutPrinciple[];
   beyondWork: string[];
   funFacts: string[];
