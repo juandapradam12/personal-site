@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/ui/PageHeader.astro';
 import LinkButtons from '../components/ui/LinkButtons.astro';
 import AboutStory from '../components/sections/AboutStory.astro';
-import AboutPrinciples from '../components/sections/AboutPrinciples.astro';
 import AboutBeyondWork from '../components/sections/AboutBeyondWork.astro';
 import { getSiteConfig, getCvConfig, getAboutConfig } from '../lib/content';
 
@@ -34,6 +33,5 @@ const contactLinks = cv.links.filter((link) => link.label !== 'Download PDF');
     </div>
   </div>
   <AboutStory />
-  <AboutPrinciples />
   <AboutBeyondWork />
 </BaseLayout>

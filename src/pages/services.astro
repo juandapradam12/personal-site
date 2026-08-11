@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/ui/PageHeader.astro';
+import SectionNav from '../components/ui/SectionNav.astro';
+import ServicesList from '../components/sections/ServicesList.astro';
+import ServicesProcess from '../components/sections/ServicesProcess.astro';
+import { getSiteConfig, getServicesConfig } from '../lib/content';
+
+const site = getSiteConfig();
+const services = getServicesConfig();
+
+const sections = [
+  { id: 'services', label: 'Services' },
+  { id: 'how-i-work', label: 'How I work' },
+];
+---
+
+<BaseLayout
+  title={`Services — ${site.name}`}
+  description="Data Science, AI, and Quantum Computing services, from strategy to production deployment."
+>
+  <PageHeader title="Services" description={services.intro.trim()} />
+  <SectionNav sections={sections} />
+  <ServicesList />
+  <ServicesProcess />
+</BaseLayout>

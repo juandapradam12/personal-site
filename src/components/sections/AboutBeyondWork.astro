@@ -5,27 +5,12 @@ import { getAboutConfig } from '../../lib/content';
 
 const about = getAboutConfig();
 const hasBeyondWork = about.beyondWork.length > 0;
-const hasFunFacts = about.funFacts.length > 0;
 ---
 
 {
   hasBeyondWork && (
     <SectionHeading title="Beyond work" id="beyond-work">
       <TagList items={about.beyondWork} />
-    </SectionHeading>
-  )
-}
-
-{
-  hasFunFacts && (
-    <SectionHeading title="Fun facts" id="fun-facts">
-      <ul class="space-y-2">
-        {about.funFacts.map((fact) => (
-          <li class="text-sm" style="color: var(--color-muted);">
-            {fact}
-          </li>
-        ))}
-      </ul>
     </SectionHeading>
   )
 }

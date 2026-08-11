@@ -11,6 +11,9 @@ items:
   - label: Research
     href: /research
     enabled: true
+  - label: Services
+    href: /services
+    enabled: true
   - label: Blog
     href: /blog
     enabled: false

@@ -96,18 +96,27 @@ export interface CvLink {
   href: string;
 }
 
-export interface AboutPrinciple {
+export interface AboutConfig {
+  intro: string;
+  story: string;
+  beyondWork: string[];
+}
+
+export interface ServiceItem {
   title: string;
   description?: string;
 }
 
-export interface AboutConfig {
+export interface ProcessStep {
+  title: string;
+  description?: string;
+}
+
+export interface ServicesConfig {
   intro: string;
-  story: string;
-  principlesIntro?: string;
-  principles: AboutPrinciple[];
-  beyondWork: string[];
-  funFacts: string[];
+  services: ServiceItem[];
+  processIntro?: string;
+  process: ProcessStep[];
 }
 
 export interface CvConfig {
@@ -143,4 +152,8 @@ export function getEnabledNavItems(): NavItem[] {
 
 export function getAboutConfig(): AboutConfig {
   return loadYaml<AboutConfig>('config/about.yaml');
+}
+
+export function getServicesConfig(): ServicesConfig {
+  return loadYaml<ServicesConfig>('config/services.yaml');
 }

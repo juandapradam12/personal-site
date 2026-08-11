@@ -1,0 +1,42 @@
+# Content for the Services page — this is a first draft based on your CV,
+# edit freely with the actual services you want to offer.
+
+intro: >
+  End-to-end Data Science, AI, and Quantum Computing services — from a
+  first conversation about your problem to a solution running in
+  production.
+
+services:
+  - title: Data Science & AI Consulting
+    description: >
+      Scoping, feasibility studies, and technical strategy for teams
+      exploring what Data Science, Machine Learning, or AI can do for them.
+  - title: ML & AI Model Development
+    description: >
+      Design and development of predictive models and AI systems — from
+      classical ML to deep learning, NLP, and LLM applications — tailored
+      to the problem at hand.
+  - title: End-to-End Deployment
+    description: >
+      Taking models from notebook to production: software architecture,
+      APIs, containerization, and CI/CD, so solutions keep running reliably.
+  - title: Research Collaboration
+    description: >
+      Applied research partnerships bridging academia and industry, from
+      mathematical modelling to publishable results.
+  - title: Quantum Computing Exploration
+    description: >
+      Early-stage exploration of Quantum Machine Learning, Quantum
+      Optimization, and Post-Quantum Cryptography for teams looking ahead.
+
+processIntro: "My approach to an end-to-end project:"
+process:
+  - title: Requirements gathering
+  - title: Data collection
+  - title: Modelling & algorithm design
+  - title: Software development
+    description: With appropriate software architecture
+  - title: Deployment
+  - title: CI/CD
+  - title: Results presentation
+    description: Continuous communication with stakeholders

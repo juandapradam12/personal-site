@@ -1,21 +1,21 @@
 ---
 import SectionHeading from '../ui/SectionHeading.astro';
-import { getAboutConfig } from '../../lib/content';
+import { getServicesConfig } from '../../lib/content';
 
-const about = getAboutConfig();
-const hasPrinciples = about.principles.length > 0;
+const services = getServicesConfig();
+const hasProcess = services.process.length > 0;
 ---
 
 {
-  hasPrinciples && (
+  hasProcess && (
     <SectionHeading title="How I work" id="how-i-work">
-      {about.principlesIntro && (
+      {services.processIntro && (
         <p class="mb-4 text-sm" style="color: var(--color-muted);">
-          {about.principlesIntro}
+          {services.processIntro}
         </p>
       )}
       <ol class="space-y-3">
-        {about.principles.map((step, index) => (
+        {services.process.map((step, index) => (
           <li class="flex items-start gap-3">
             <span
               class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-semibold"

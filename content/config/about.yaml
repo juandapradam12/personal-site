@@ -1,42 +1,26 @@
-# Sourced from Juan's LinkedIn "About" section and CV — edit directly if
-# anything needs tweaking.
+# Juan's own words for the About page — edit directly whenever you like.
 
 intro: >
-  Senior Data Scientist with over six years of experience designing and
-  delivering end-to-end AI solutions and Intelligent Systems across
-  Finance, Cybersecurity, Sports & Entertainment, Smart Cities, and
-  Government.
+  Mathematician and Physicist with a passion for building solutions at the
+  intersection of research and industry — over six years turning theory
+  into real-world Data Science and AI.
 
 story: >
-  My expertise combines Artificial Intelligence, Machine Learning, Deep
-  Learning, Mathematical Modelling, and Software Engineering to turn
-  scientific concepts into production-ready solutions that generate
-  measurable business value — from Fraud Detection and Adaptive
-  Authentication to Predictive Analytics and LLM Applications.
+  With a strong academic background in Mathematical Physics and Applied
+  Mathematics, and driven by a passion for solving real-world, challenging
+  problems, I've built my career across Data Science, Artificial
+  Intelligence, Machine Learning, and Quantum Computing.
 
+  I enjoy contributing my grain of sand to society by turning theoretical
+  knowledge into practical solutions with real impact — building algorithms
+  that create real value for people and organizations.
 
-  My academic background in Mathematical Physics and Applied Mathematics
-  lets me approach problems from first principles, bridging rigorous
-  scientific thinking with practical Software Engineering. I am currently
-  expanding into Quantum Computing, with the goal of bridging Research
-  and Industry through solutions that create real-world impact.
-
-principlesIntro: "My approach to an end-to-end project:"
-principles:
-  - title: Requirements gathering
-  - title: Data collection
-  - title: Modelling & algorithm design
-  - title: Software development
-    description: With appropriate software architecture
-  - title: Deployment
-  - title: CI/CD
-  - title: Results presentation
-    description: Continuous communication with stakeholders
+  Along the way, I've had the fortune of working across a wide range of
+  industries and organizations — from startups to large corporations, and
+  from academia to government — as well as across a broad range of
+  cultures.
 
 # Add a few hobbies, interests, or things you like outside of work.
 # This section only shows up on the site once this list isn't empty.
-beyondWork: []
-
-# Optional short, punchy facts about you (e.g. languages, places lived,
-# a competition you won, an odd skill). Shows up once populated.
-funFacts: []
+beyondWork:
+  - Triathlon
