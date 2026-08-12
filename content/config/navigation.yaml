@@ -1,9 +1,9 @@
 items:
   - label: About
-    href: /about
+    href: /
     enabled: true
   - label: CV
-    href: /
+    href: /cv
     enabled: true
   - label: Work
     href: /work

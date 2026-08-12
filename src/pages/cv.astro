@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionNav from '../components/ui/SectionNav.astro';
+import CVHero from '../components/sections/CVHero.astro';
+import CVExperience from '../components/sections/CVExperience.astro';
+import CVEducation from '../components/sections/CVEducation.astro';
+import CVCertifications from '../components/sections/CVCertifications.astro';
+import CVSkills from '../components/sections/CVSkills.astro';
+import CVToolbox from '../components/sections/CVToolbox.astro';
+import CVStrengths from '../components/sections/CVStrengths.astro';
+import CVLanguages from '../components/sections/CVLanguages.astro';
+import { getSiteConfig } from '../lib/content';
+
+const site = getSiteConfig();
+
+const sections = [
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'certifications', label: 'Certifications' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'toolbox', label: 'Tool Box' },
+  { id: 'strengths', label: 'Strengths' },
+  { id: 'languages', label: 'Languages' },
+];
+---
+
+<BaseLayout
+  title={`CV — ${site.name}`}
+  description={site.seo.description}
+>
+  <CVHero />
+  <SectionNav sections={sections} />
+  <CVExperience />
+  <CVEducation />
+  <CVCertifications />
+  <CVSkills />
+  <CVToolbox />
+  <CVStrengths />
+  <CVLanguages />
+</BaseLayout>
