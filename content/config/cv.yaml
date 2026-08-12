@@ -162,6 +162,10 @@ certifications:
     issuer: Hertie School — Data Science Lab
     date: Jul 2021
 
+# Optional `href` makes the Work card clickable (opens in a new tab).
+# NEVER add href for company / client work (Cívica, UEFA, DefensePoint,
+# SKG, Advanced Tubular Tech, etc.) — even if a repo exists. Only use
+# href for personal or open-source projects you are free to share.
 projects:
   - name: Marketing Chatbot
     context: Cívica (for UEFA)

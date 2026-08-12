@@ -71,6 +71,8 @@ export interface CvProjectItem {
   name: string;
   context: string;
   description: string;
+  /** Optional GitHub (or other) URL — card becomes clickable when set. */
+  href?: string;
 }
 
 export interface PublicationItem {
@@ -112,6 +114,17 @@ export interface ProcessStep {
   description?: string;
 }
 
+export interface ProcessTrack {
+  id: string;
+  title: string;
+  subtitle?: string;
+  /** Short label shown above the title, e.g. "Industry" / "Research". */
+  label?: string;
+  /** One-line outcome or "best for" statement. */
+  outcome?: string;
+  steps: ProcessStep[];
+}
+
 export interface LetsTalkConfig {
   title: string;
   description: string;
@@ -125,7 +138,11 @@ export interface ServicesConfig {
   intro: string;
   services: ServiceItem[];
   processIntro?: string;
-  process: ProcessStep[];
+  /** @deprecated Prefer `workflows` — kept for backwards compatibility. */
+  process?: ProcessStep[];
+  workflows?: ProcessTrack[];
+  /** Shared principles that apply across both industry and research work. */
+  processPrinciples?: string[];
   letsTalk?: LetsTalkConfig;
 }
 

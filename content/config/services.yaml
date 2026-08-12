@@ -38,17 +38,59 @@ services:
       organization stands today and what it needs to prepare for Quantum
       Computing, Quantum Machine Learning, and Post-Quantum Cryptography.
 
-processIntro: "My approach to an end-to-end project:"
-process:
-  - title: Requirements gathering
-  - title: Data collection
-  - title: Modelling & algorithm design
-  - title: Software development
-    description: With appropriate software architecture
-  - title: Deployment
-  - title: CI/CD
-  - title: Results presentation
-    description: Continuous communication with stakeholders
+processIntro: >
+  Two complementary ways of working — one for delivering production
+  systems, one for rigorous research. Same standards of clarity,
+  structure, and communication; different emphasis where it matters.
+
+workflows:
+  - id: industry
+    label: Industry
+    title: End-to-end delivery
+    subtitle: From problem framing to a system running in production
+    outcome: Best for product, operations, and applied AI initiatives with clear business goals.
+    steps:
+      - title: Requirements & scoping
+        description: Clarify objectives, constraints, success metrics, and stakeholders.
+      - title: Data collection & exploration
+        description: Gather, audit, and understand the data landscape.
+      - title: Modelling & algorithm design
+        description: Choose and design the right mathematical and ML approach.
+      - title: Software architecture & development
+        description: Build maintainable systems with a suitable architecture.
+      - title: Deployment & CI/CD
+        description: Ship reliably — containers, pipelines, and environments.
+      - title: Monitoring & iteration
+        description: Track performance in production and refine over time.
+      - title: Results & stakeholder communication
+        description: Present outcomes clearly and keep decision-makers aligned.
+
+  - id: research
+    label: Research
+    title: Research collaboration
+    subtitle: From research question to publishable insight
+    outcome: Best for R&D, academic partnerships, and problems that need first-principles depth.
+    steps:
+      - title: Research question
+        description: Define the problem with precision and scientific relevance.
+      - title: Literature & state of the art
+        description: Map prior work and identify the gap to address.
+      - title: Theoretical modelling
+        description: Formalise the problem with mathematics, physics, or algorithms.
+      - title: Experimentation & simulation
+        description: Design experiments, run simulations, or analyse data.
+      - title: Validation & analysis
+        description: Test hypotheses rigorously and interpret results.
+      - title: Documentation & publication
+        description: Write up methods and findings for papers, reports, or talks.
+      - title: Knowledge transfer
+        description: Translate results into industry applications when relevant.
+
+processPrinciples:
+  - Rigour before shortcuts
+  - Clear communication with stakeholders
+  - Reproducible methods and documented decisions
+  - Bridge between theory and real-world impact
 
 letsTalk:
   title: "Let's talk"
