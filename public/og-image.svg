@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#1d3557"/>
+  <rect x="480" y="160" width="240" height="240" rx="48" fill="#1d3557"/>
+  <text x="600" y="318" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="110" font-weight="700" fill="#ffffff">JP</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="42" font-weight="600" fill="#1d3557">Juan David Prada Malagon</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="400" fill="#52525b">Senior Data Scientist - Mathematical Physicist</text>
+</svg>

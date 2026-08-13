@@ -3,9 +3,12 @@ role: Senior Data Scientist · Mathematical Physicist
 tagline: Bridging research and industry through AI, mathematics, and intelligent systems
 email: pradamalagonjd@gmail.com
 location: Barcelona, Spain
+# Used for absolute Open Graph / social preview URLs. Update when you add a custom domain.
+url: https://personal-site-azure-xi.vercel.app
 openTo:
   - full-time roles
   - consulting
 seo:
   title: Juan David Prada Malagón — Senior Data Scientist
   description: Personal site and CV of Juan David Prada Malagón, Senior Data Scientist specializing in AI, Machine Learning, and Mathematical Modelling.
+  image: /og-image.png

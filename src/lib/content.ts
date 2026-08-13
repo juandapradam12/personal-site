@@ -16,10 +16,12 @@ export interface SiteConfig {
   tagline: string;
   email: string;
   location: string;
+  url?: string;
   openTo: string[];
   seo: {
     title: string;
     description: string;
+    image?: string;
   };
 }
 
