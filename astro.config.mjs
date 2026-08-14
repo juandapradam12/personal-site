@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://personal-site-azure-xi.vercel.app',
+  site: 'https://juandavidpradamalagon.com',
   redirects: {
     '/about': '/',
   },
