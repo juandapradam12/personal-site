@@ -11,8 +11,12 @@ const paragraphs = about.story
 
 <section class="section-block space-y-4">
   {
-    paragraphs.map((paragraph) => (
-      <p class="max-w-prose text-base leading-relaxed" style="color: var(--color-muted);">
+    paragraphs.map((paragraph, index) => (
+      <p
+        class="max-w-prose text-base leading-relaxed"
+        style={`color: var(--color-muted); --reveal-delay: ${180 + index * 110}ms;`}
+        data-reveal
+      >
         {paragraph}
       </p>
     ))

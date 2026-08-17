@@ -5,7 +5,8 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
-:root {
+:root,
+html[data-theme='light'] {
   color-scheme: light;
   --color-bg: #f8f9fa;
   --color-surface: #ffffff;
@@ -18,17 +19,15 @@
   --section-nav-height: 52px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --color-bg: #0b0f16;
-    --color-surface: #151a23;
-    --color-text: #f4f5f7;
-    --color-muted: #a1a8b3;
-    --color-border: #262c36;
-    --color-accent: #7ea1cf;
-    --color-accent-soft: #1e2b3f;
-  }
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #0b0f16;
+  --color-surface: #151a23;
+  --color-text: #f4f5f7;
+  --color-muted: #a1a8b3;
+  --color-border: #262c36;
+  --color-accent: #7ea1cf;
+  --color-accent-soft: #1e2b3f;
 }
 
 html {
@@ -78,6 +77,34 @@ a:hover {
 
 .section-block {
   scroll-margin-top: calc(var(--header-height) + var(--section-nav-height) + 1rem);
+}
+
+/* Home-only entrance / scroll reveal (progressive: visible without JS) */
+.js [data-reveal]:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.js [data-reveal] {
+  transition:
+    opacity 0.45s cubic-bezier(0.2, 0.65, 0.25, 1) var(--reveal-delay, 0ms),
+    transform 0.45s cubic-bezier(0.2, 0.65, 0.25, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-reveal],
+  .js [data-reveal]:not(.is-visible) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
 }
 
 .section-nav {

@@ -11,11 +11,31 @@ const cv = getCvConfig();
       cv.publications.map((item) => (
         <li class="text-sm">
           <p class="font-medium" style="color: var(--color-text);">
-            {item.title}
+            {item.href ? (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                class="no-underline hover:underline"
+                style="color: var(--color-text);"
+              >
+                {item.title}
+              </a>
+            ) : (
+              item.title
+            )}
           </p>
           <p style="color: var(--color-muted);">{item.authors}</p>
           <p class="text-xs" style="color: var(--color-muted);">
             {item.venue} · {item.date}
+            {item.href && (
+              <>
+                {' · '}
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  View
+                </a>
+              </>
+            )}
           </p>
         </li>
       ))

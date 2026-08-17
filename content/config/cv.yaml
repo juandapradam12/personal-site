@@ -251,10 +251,12 @@ publications:
     authors: "Klein, C., Prada-Malagón, J.D., & Stilov, N."
     venue: Elsevier — Physica D — Nonlinear Phenomena
     date: Nov 2023
+    href: https://www.sciencedirect.com/science/article/abs/pii/S0167278923002397
   - title: Time-dependent topological analysis for cardiovascular disease diagnosis using magnetic resonance
     authors: "Prada-Malagón, J.D."
     venue: CRAI Universitat de Barcelona — Dipòsit Digital UB
     date: Sep 2023
+    href: https://diposit.ub.edu/items/24c52e75-4667-47dc-a72a-2036eb07131d
   - title: "Topological Phase Transitions and Non-commutative Geometry"
     authors: "Prada, J.D. & Reyes, A."
     venue: "Research Project INV-2019-84-1833 — Ministerio de Ciencias"
@@ -263,6 +265,7 @@ publications:
     authors: "Prada Malagón, J.D."
     venue: Universidad de los Andes
     date: "2020"
+    href: https://repositorio.uniandes.edu.co/entities/publication/fd3ce5a3-10ac-457f-a376-1c0ca8a53379
   - title: SPDC characterization on liquid phase exfoliated 2D crystals for piezoelectric devices
     authors: "Prada, J.D., Navarrete, C., Navarrete, C., Hernandez, Y., Valencia, A."
     venue: Universidad de los Andes
@@ -419,5 +422,7 @@ links:
     href: https://www.linkedin.com/in/juandpradam12/
   - label: GitHub
     href: https://github.com/juandapradam12
+  - label: ORCID
+    href: https://orcid.org/0000-0001-8036-272X
   - label: Download PDF
     href: /cv.pdf

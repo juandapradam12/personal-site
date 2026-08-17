@@ -1,5 +1,6 @@
 ---
 import Nav from './Nav.astro';
+import ThemeToggle from '../ui/ThemeToggle.astro';
 import { getSiteConfig } from '../../lib/content';
 
 const site = getSiteConfig();
@@ -17,7 +18,10 @@ const site = getSiteConfig();
         {site.role}
       </span>
     </a>
-    <Nav />
+    <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+      <Nav />
+      <ThemeToggle />
+    </div>
   </div>
 </header>
 

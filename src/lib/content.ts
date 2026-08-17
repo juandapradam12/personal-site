@@ -82,6 +82,8 @@ export interface PublicationItem {
   authors: string;
   venue: string;
   date: string;
+  /** Optional link to the paper, thesis, or repository record. */
+  href?: string;
 }
 
 export interface LanguageItem {

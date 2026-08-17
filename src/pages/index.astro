@@ -17,13 +17,17 @@ const contactLinks = cv.links.filter((link) => link.label !== 'Download PDF');
   description={about.intro.trim()}
 >
   <div class="flex flex-col-reverse gap-6 sm:flex-row sm:items-start sm:justify-between">
-    <div class="flex-1">
+    <div class="flex-1" data-reveal style="--reveal-delay: 40ms;">
       <PageHeader title={site.name} description={about.intro.trim()} />
       <p class="mt-2 text-sm tracking-wide" style="color: var(--color-muted);">
         {site.role}
       </p>
     </div>
-    <div class="flex shrink-0 flex-col items-center gap-3">
+    <div
+      class="flex shrink-0 flex-col items-center gap-3"
+      data-reveal
+      style="--reveal-delay: 120ms;"
+    >
       <img
         src="/images/juan.jpg"
         alt="Juan David Prada Malagón"
@@ -37,4 +41,51 @@ const contactLinks = cv.links.filter((link) => link.label !== 'Download PDF');
   </div>
   <AboutStory />
   <AboutBeyondWork />
+
+  <script is:inline>
+    (() => {
+      const show = (el) => el.classList.add('is-visible');
+
+      const run = () => {
+        const els = [...document.querySelectorAll('[data-reveal]')];
+        if (!els.length) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          els.forEach(show);
+          return;
+        }
+
+        // Hide first, then reveal so the entrance is always visible on load.
+        document.documentElement.classList.add('js');
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            els.forEach(show);
+
+            // Keep observing any late/below-fold nodes if content grows later.
+            const observer = new IntersectionObserver(
+              (entries) => {
+                for (const entry of entries) {
+                  if (!entry.isIntersecting) continue;
+                  show(entry.target);
+                  observer.unobserve(entry.target);
+                }
+              },
+              { rootMargin: '0px 0px -6% 0px', threshold: 0.08 },
+            );
+
+            els.forEach((el) => {
+              if (!el.classList.contains('is-visible')) observer.observe(el);
+            });
+          });
+        });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', run);
+      } else {
+        run();
+      }
+    })();
+  </script>
 </BaseLayout>
