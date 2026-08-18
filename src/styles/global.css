@@ -43,6 +43,139 @@ body {
   line-height: 1.6;
 }
 
+/* Page chalkboard washes (navy-tinted illustrations / photos) */
+body.page-research,
+body.page-about,
+body.page-work,
+body.page-services {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--color-bg);
+}
+
+body.page-research::before,
+body.page-about::before,
+body.page-work::before,
+body.page-services::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-size: 960px auto;
+  background-position: 0 0;
+  background-repeat: repeat;
+  opacity: 0.34;
+}
+
+html[data-theme='dark'] body.page-about::before,
+html[data-theme='dark'] body.page-work::before,
+html[data-theme='dark'] body.page-services::before {
+  opacity: 0.26;
+  filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
+}
+
+html[data-theme='dark'] body.page-research::before {
+  opacity: 0.32;
+  filter: none;
+}
+
+body.page-research::before {
+  background-image: image-set(
+    url('/images/research-chalkboard.webp') type('image/webp'),
+    url('/images/research-chalkboard.jpg') type('image/jpeg')
+  );
+  background-size: cover;
+  background-position: center 18%;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+html[data-theme='dark'] body.page-research::before {
+  opacity: 0.32;
+}
+
+body.page-about::before {
+  background-image: image-set(
+    url('/images/about-chalkboard-v2.webp?v=11') type('image/webp'),
+    url('/images/about-chalkboard-v2.jpg?v=11') type('image/jpeg')
+  );
+}
+
+body.page-work::before {
+  background-image: image-set(
+    url('/images/work-chalkboard-v2.webp?v=11') type('image/webp'),
+    url('/images/work-chalkboard-v2.jpg?v=11') type('image/jpeg')
+  );
+}
+
+body.page-services::before {
+  background-image: image-set(
+    url('/images/services-chalkboard-v2.webp?v=11') type('image/webp'),
+    url('/images/services-chalkboard-v2.jpg?v=11') type('image/jpeg')
+  );
+}
+
+/* CV: Experience hybrid code + systems wash */
+.cv-experience-wash {
+  position: relative;
+  isolation: isolate;
+}
+
+.cv-experience-wash::before {
+  content: '';
+  position: absolute;
+  inset: 0 -1.5rem;
+  z-index: -1;
+  pointer-events: none;
+  background-image: image-set(
+    url('/images/cv-experience-chalkboard-v2.webp?v=11') type('image/webp'),
+    url('/images/cv-experience-chalkboard-v2.jpg?v=11') type('image/jpeg')
+  );
+  background-size: 960px auto;
+  background-position: 0 0;
+  background-repeat: repeat;
+  opacity: 0.34;
+  border-radius: 0.75rem;
+}
+
+html[data-theme='dark'] .cv-experience-wash::before {
+  opacity: 0.26;
+  filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
+}
+
+/* CV: academic chalk wash only from Education downward */
+.cv-academic-wash {
+  position: relative;
+  isolation: isolate;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.cv-academic-wash::before {
+  content: '';
+  position: absolute;
+  inset: 0 -1.5rem;
+  z-index: -1;
+  pointer-events: none;
+  background-image: image-set(
+    url('/images/cv-academic-chalkboard-v2.webp?v=8') type('image/webp'),
+    url('/images/cv-academic-chalkboard-v2.jpg?v=8') type('image/jpeg')
+  );
+  /* Large sheet so varied motif sizes stay readable */
+  background-size: 960px auto;
+  background-position: 0 0;
+  background-repeat: repeat;
+  opacity: 0.34;
+  border-radius: 0.75rem;
+}
+
+html[data-theme='dark'] .cv-academic-wash::before {
+  opacity: 0.26;
+  filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
+}
+
 h1,
 h2,
 h3,
@@ -149,7 +282,13 @@ a:hover {
   #site-header,
   .section-nav,
   footer,
-  .no-print {
+  .no-print,
+  body.page-research::before,
+  body.page-about::before,
+  body.page-work::before,
+  body.page-services::before,
+  .cv-experience-wash::before,
+  .cv-academic-wash::before {
     display: none !important;
   }
 

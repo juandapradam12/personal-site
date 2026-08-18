@@ -10,6 +10,8 @@ interface Props {
   description?: string;
   noindex?: boolean;
   image?: string;
+  /** Optional body class for page-specific themes (e.g. research background). */
+  pageClass?: string;
 }
 
 const site = getSiteConfig();
@@ -18,6 +20,7 @@ const {
   description = site.seo.description,
   noindex = false,
   image = site.seo.image || '/og-image.png',
+  pageClass,
 } = Astro.props;
 
 const siteUrl = (site.url || Astro.site?.toString() || Astro.url.origin).replace(/\/$/, '');
@@ -62,7 +65,7 @@ const imageUrl = new URL(image, `${siteUrl}/`).toString();
     />
     <Analytics />
   </head>
-  <body class="flex min-h-screen flex-col">
+  <body class:list={['flex', 'min-h-screen', 'flex-col', pageClass]}>
     <Header />
     <main class="flex-1 py-10">
       <div class="container-main">
