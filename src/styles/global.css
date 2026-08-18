@@ -47,7 +47,8 @@ body {
 body.page-research,
 body.page-about,
 body.page-work,
-body.page-services {
+body.page-services,
+body.page-cv {
   position: relative;
   isolation: isolate;
   background-color: var(--color-bg);
@@ -56,7 +57,9 @@ body.page-services {
 body.page-research::before,
 body.page-about::before,
 body.page-work::before,
-body.page-services::before {
+body.page-services::before,
+body.page-cv::before,
+body.page-cv::after {
   content: '';
   position: fixed;
   inset: 0;
@@ -70,7 +73,9 @@ body.page-services::before {
 
 html[data-theme='dark'] body.page-about::before,
 html[data-theme='dark'] body.page-work::before,
-html[data-theme='dark'] body.page-services::before {
+html[data-theme='dark'] body.page-services::before,
+html[data-theme='dark'] body.page-cv::before,
+html[data-theme='dark'] body.page-cv::after {
   opacity: 0.26;
   filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
 }
@@ -97,8 +102,8 @@ html[data-theme='dark'] body.page-research::before {
 
 body.page-about::before {
   background-image: image-set(
-    url('/images/about-chalkboard-v2.webp?v=11') type('image/webp'),
-    url('/images/about-chalkboard-v2.jpg?v=11') type('image/jpeg')
+    url('/images/about-chalkboard-v2.webp?v=12') type('image/webp'),
+    url('/images/about-chalkboard-v2.jpg?v=12') type('image/jpeg')
   );
 }
 
@@ -116,64 +121,45 @@ body.page-services::before {
   );
 }
 
-/* CV: Experience hybrid code + systems wash */
-.cv-experience-wash {
-  position: relative;
-  isolation: isolate;
-}
-
-.cv-experience-wash::before {
-  content: '';
-  position: absolute;
-  inset: 0 -1.5rem;
-  z-index: -1;
-  pointer-events: none;
+/* CV: fixed full-viewport washes (same technique as Work) */
+body.page-cv::before {
   background-image: image-set(
-    url('/images/cv-experience-chalkboard-v2.webp?v=11') type('image/webp'),
-    url('/images/cv-experience-chalkboard-v2.jpg?v=11') type('image/jpeg')
+    url('/images/cv-experience-chalkboard-v2.webp?v=12') type('image/webp'),
+    url('/images/cv-experience-chalkboard-v2.jpg?v=12') type('image/jpeg')
   );
-  background-size: 960px auto;
-  background-position: 0 0;
-  background-repeat: repeat;
+  transition: opacity 0.35s ease;
+}
+
+body.page-cv::after {
+  background-image: image-set(
+    url('/images/cv-academic-chalkboard-v2.webp?v=12') type('image/webp'),
+    url('/images/cv-academic-chalkboard-v2.jpg?v=12') type('image/jpeg')
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+body.page-cv.cv-wash-academic::before {
+  opacity: 0;
+}
+
+body.page-cv.cv-wash-academic::after {
   opacity: 0.34;
-  border-radius: 0.75rem;
 }
 
-html[data-theme='dark'] .cv-experience-wash::before {
+html[data-theme='dark'] body.page-cv.cv-wash-academic::before {
+  opacity: 0;
+}
+
+html[data-theme='dark'] body.page-cv.cv-wash-academic::after {
   opacity: 0.26;
-  filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
 }
 
-/* CV: academic chalk wash only from Education downward */
-.cv-academic-wash {
-  position: relative;
-  isolation: isolate;
+/* CV: Education-down divider only */
+.cv-academic-block {
   margin-top: 3rem;
   padding-top: 3rem;
   border-top: 1px solid var(--color-border);
-}
-
-.cv-academic-wash::before {
-  content: '';
-  position: absolute;
-  inset: 0 -1.5rem;
-  z-index: -1;
-  pointer-events: none;
-  background-image: image-set(
-    url('/images/cv-academic-chalkboard-v2.webp?v=8') type('image/webp'),
-    url('/images/cv-academic-chalkboard-v2.jpg?v=8') type('image/jpeg')
-  );
-  /* Large sheet so varied motif sizes stay readable */
-  background-size: 960px auto;
-  background-position: 0 0;
-  background-repeat: repeat;
-  opacity: 0.34;
-  border-radius: 0.75rem;
-}
-
-html[data-theme='dark'] .cv-academic-wash::before {
-  opacity: 0.26;
-  filter: invert(1) hue-rotate(180deg) brightness(1.4) contrast(1.05);
 }
 
 h1,
@@ -287,8 +273,8 @@ a:hover {
   body.page-about::before,
   body.page-work::before,
   body.page-services::before,
-  .cv-experience-wash::before,
-  .cv-academic-wash::before {
+  body.page-cv::before,
+  body.page-cv::after {
     display: none !important;
   }
 

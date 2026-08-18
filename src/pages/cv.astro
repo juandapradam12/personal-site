@@ -27,13 +27,12 @@ const sections = [
 <BaseLayout
   title={`CV — ${site.name}`}
   description={site.seo.description}
+  pageClass="page-cv"
 >
   <CVHero />
   <SectionNav sections={sections} />
-  <div class="cv-experience-wash">
-    <CVExperience />
-  </div>
-  <div class="cv-academic-wash">
+  <CVExperience />
+  <div class="cv-academic-block">
     <CVEducation />
     <CVCertifications />
     <CVSkills />
@@ -41,4 +40,21 @@ const sections = [
     <CVStrengths />
     <CVLanguages />
   </div>
+
+  <script is:inline>
+    (() => {
+      const body = document.body;
+      const education = document.getElementById('education');
+      if (!body.classList.contains('page-cv') || !education) return;
+
+      const updateWash = () => {
+        const top = education.getBoundingClientRect().top;
+        body.classList.toggle('cv-wash-academic', top < window.innerHeight * 0.4);
+      };
+
+      updateWash();
+      window.addEventListener('scroll', updateWash, { passive: true });
+      window.addEventListener('resize', updateWash);
+    })();
+  </script>
 </BaseLayout>
